@@ -1,0 +1,335 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
+    <link rel="stylesheet" href="second_page.css">
+    <link rel="stylesheet" href="menu_bar.css">
+    <title>Menu Explanation</title>
+    <script src="jquery-3.7.1.js"></script>
+    <style>
+        /*sidenav styling*/
+        .sidenav {
+            height: 100vh;
+            width: 160px;
+            background-color: #00643d;
+            position: fixed;
+            /*스크롤을 해도 항상 같은 위치에 보이도록 설정*/
+            z-index: 1;
+            /*다른 요소들 위에 sidenav가 표시되도록*/
+            left: 0;
+            top: 0;
+            overflow-x: hidden;
+            padding-top: 30px;
+            /*상단 여백*/
+            position: absolute;
+            /* Change from fixed to absolute */
+            left: 0;
+            top: 0;
+        }
+
+        .sidenav a {
+            font: bold 20px/1.4 'Open Sans', arial, sans-serif;
+            padding: 10px 10px 10px 10px;
+            text-decoration: none;
+            background-color: #00643d;
+            color: #f1f1f1;
+            display: block;
+            text-align: center;
+            height: 6vh;
+            padding-top: 20px;
+        }
+
+        .sidenav a.active,
+        .sidenav a:hover {
+            background-color: #e7f0ec19;
+        }
+
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sidenav">
+        <!--Previous Page Button-->
+        <a href="#" class="previous">&laquo;</a>
+        <a href="#">Menu</a>
+        <a href="#">Drink</a>
+        <a href="#">Food</a>
+        <a href="#">Product</a>
+        <a href="#">Card</a>
+        <a href="#">Menu Story</a>
+    </div>
+
+    <div class="container">
+        <div id="top_menu_id">
+            <ul class="top_menu">
+                <li>
+                    <a1 href="#">Cold Brew</a1>
+                </li>
+                <li>
+                    <a1 href="#">Brewed Coffee</a1>
+                </li>
+                <li>
+                    <a1 href="#">Espresso</a1>
+                </li>
+                <li>
+                    <a1 href="#">Frappuccino</a1>
+                </li>
+                <li>
+                    <a1 href="#">Blended</a1>
+                </li>
+                <li>
+                    <a1 href="#">Starbucks Refreshers</a1>
+                </li>
+                <li>
+                    <a1 href="#">Starbucks Fizio</a1>
+                </li>
+                <li>
+                    <a1 href="#">Teavana</a1>
+                </li>
+                <li>
+                    <a1 href="#">Others</a1>
+                </li>
+                <li>
+                    <a1 href="#">RTD</a1>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="frappuccino-slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+
+                    <!--1. espresso frappuccino card content-->
+                    <div class="card swiper-slide">
+
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="espresso_frappuccino.jpeg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Espresso Frappuccino</h2>
+                            <h3 class="kor_name">에스프레소 프라푸치노</h3>
+                            <p class="description"><br>에스프레소 샷의 강렬함과<br> 약간의 단맛이 어우러진 프라푸치노<br></p>
+
+                            <button class="button">View More</button>
+                        </div>
+
+                    </div>
+
+                    <!--2. Java Chip Frappuccino card content-->
+                    <div class="card swiper-slide">
+
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="Java Chip Frappuccino.jpeg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Java Chip Frappuccino</h2>
+                            <h3 class="kor_name">자바칩 프라푸치노</h3>
+                            <p class="description"><br>커피, 모카 소스, 진한 초콜릿 칩이 <br>입안 가득 느껴지는 프라푸치노</p>
+
+                            <button class="button">View More</button>
+                        </div>
+
+                    </div>
+
+                    <!--3. Caramel Frappuccino card content-->
+                    <div class="card swiper-slide">
+
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="Caramel Frappuccino.jpeg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Caramel Frappuccino</h2>
+                            <h3 class="kor_name">카라멜 프라푸치노</h3>
+                            <p class="description"><br>카라멜과 커피가 어우러진 프라푸치노</p>
+
+                            <button class="button">View More</button>
+                        </div>
+
+                    </div>
+
+                    <!--4. White Chocolate Mocha Frappuccino card content-->
+                    <div class="card swiper-slide">
+
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="White Chocolate Mocha Frappuccino.jpeg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">White Chocolate Mocha Frappuccino</h2>
+                            <h3 class="kor_name">화이트 초콜릿 모카 프라푸치노</h3>
+                            <p class="description"><br>화이트 초콜릿, 커피와 우유가 조화로운 프라푸치노</p>
+
+                            <button class="button">View More</button>
+                        </div>
+
+                    </div>
+
+                    <!--5. Jeju Black Sesame Cream Frappuccino card content-->
+                    <div class="card swiper-slide">
+
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="Jeju Black Sesame Cream Frappuccino.jpeg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Jeju Black Sesame Cream Frappuccino</h2>
+                            <h3 class="kor_name">제주 까망 크림 프라푸치노</h3>
+                            <p class="description"><br>[제주지역 한정음료]<br>제주 까망 라떼의 프라푸치노 버전<br>
+                                쫄깃한 흑임자 떡과 블랙 소보로 토핑으로 <br>컵빙수처럼 먹는 음료.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+
+                    </div>
+
+                    <!--6. Jeju Mugwort Cream Frappuccino card content-->
+                    <div class="card swiper-slide">
+
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="Jeju Mugwort Cream Frappuccino.jpeg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Jeju Mugwort Cream Frappuccino</h2>
+                            <h3 class="kor_name">제주 쑥떡 크림 프라푸치노</h3>
+                            <p class="description"><br>[제주지역 한정음료]<br> 제주 쑥쑥 라떼의 시원한 버전<br>
+                                쫄깃쫄깃한 흑임자 떡으로 씹는 재미를 <br>즐길 수 있는 음료.</p>
+
+                            <button class="button">View More</button>
+                        </div>
+
+                    </div>
+
+                    <!--7. Malcha Cream Frappuccino from Jeju Organic Farm card content-->
+                    <div class="card swiper-slide">
+
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="Malcha Cream Frappuccino from Jeju Organic Farm.jpeg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Malcha Cream Frappuccino <br>from Jeju Organic Farm</h2>
+                            <h3 class="kor_name">제주 유기농 말차로 만든 크림 프라푸치노</h3>
+                            <p class="description"><br>깊고 진한 말차 본연의 맛과 향을 <br>시원하고 부드럽게 즐길 수 있는 프라푸치노</p>
+
+                            <button class="button">View More</button>
+                        </div>
+
+                    </div>
+
+                    <!--8. Malcha Cream Frappuccino from Jeju Organic Farm card content-->
+                    <div class="card swiper-slide">
+
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="Chocolate Cream Chip Frappuccino.jpeg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Chocolate Cream Chip Frappuccino</h2>
+                            <h3 class="kor_name">초콜릿 크림 칩 프라푸치노</h3>
+                            <p class="description"><br>모카 소스와 진한 초콜릿 칩, 초콜릿 드리즐이 올라간<br> 달콤한 크림 프라푸치노</p>
+
+                            <button class="button">View More</button>
+                        </div>
+
+                    </div>
+
+                    <!--9. Pistachio Avocado Chocolate Cream Frappuccino card content-->
+                    <div class="card swiper-slide">
+
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="Pistachio Avocado Chocolate Cream Frappuccino.jpeg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Pistachio Avocado Chocolate <br>Cream Frappuccino</h2>
+                            <h3 class="kor_name">피스타치오 아보카도 초콜릿 프라푸치노</h3>
+                            <p class="description"><br>고소한 피스타치오와 달콤한 초콜릿,<br>아보카도 텍스쳐의 완벽한 조화.<br>오트를 사용해 더 맛있는 프라푸치노
+                            </p>
+
+                            <button class="button">View More</button>
+                        </div>
+
+                    </div>
+
+                    <!--10. White Tiger Frappuccino card content-->
+                    <div class="card swiper-slide">
+
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="White Tiger Frappuccino.jpeg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">White Tiger Frappuccino</h2>
+                            <h3 class="kor_name">화이트 타이거 프라푸치노</h3>
+                            <p class="description"><br>밀크 쉐이크 같은 부드럽고 달콤한 <br>바닐라 크림 프라푸치노에 깊은 풍미의 단맛을 가진 <br>흑당시럽이 어우러져
+                                용인에버랜드 백호의 <br>줄무늬를 형상화한 부드럽고 달콤한 프라푸치노<br><br>* 용인에버랜드R 매장에서만 판매하는 음료입니다</p>
+
+                            <button class="button">View More</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</body>
+
+<!-- Swiper JS -->
+<script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.js"></script>
+
+<script src="second_page.js"></script>
+
+</html>

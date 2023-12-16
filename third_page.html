@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <link rel="stylesheet" href="third_page.css">
+    <script src="jquery-3.7.1.js"></script>
+
+    <style>
+        * {
+            background-color: #e6e6e6ff;
+            font: bold 20px/1.4 'Open Sans', arial, sans-serif;
+        }
+
+        /*sidenav styling*/
+        .sidenav {
+            height: 100vh;
+            width: 160px;
+            background-color: #00643d;
+            position: fixed;
+            /*스크롤을 해도 항상 같은 위치에 보이도록 설정*/
+            z-index: 1;
+            /*다른 요소들 위에 sidenav가 표시되도록*/
+            left: 0;
+            top: 0;
+            overflow-x: hidden;
+            padding-top: 30px;
+            /*상단 여백*/
+            position: absolute;
+            /* Change from fixed to absolute */
+            left: 0;
+            top: 0;
+        }
+
+        .sidenav a {
+            font: bold 20px/1.4 'Open Sans', arial, sans-serif;
+            padding: 10px 10px 10px 10px;
+            text-decoration: none;
+            background-color: #00643d;
+            color: #f1f1f1;
+            display: block;
+            text-align: center;
+        }
+
+        .sidenav a.active,
+        .sidenav a:hover {
+            background-color: #e7f0ec19;
+        }
+
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="sidenav">
+        <!--Previous Page Button-->
+        <a href="#" class="previous">&laquo;</a>
+        <a href="#coldbrew">Cold Brew</a>
+        <a href="#brewedcoffee">Brewed Coffee</a>
+        <a href="#espresso">Espresso</a>
+        <a href="#frappuccino">Frappuccino</a>
+        <a href="#blended">Blended</a>
+        <a href="#starbucksrefreshers">Starbucks Refreshers</a>
+        <a href="#starbucksfizio">Starbucks Fizzio</a>
+        <a href="#teavana">Teavana</a>
+        <a href="#others">Others</a>
+        <a href="#rtd">RTD</a>
+    </div>
+
+    <div class="content">
+        <div class="image-section">
+            <img src="Malcha Cream Frappuccino from Jeju Organic Farm.jpeg" class="main-image">
+            <p class="image-description">Malcha Cream Frappuccino <br> from Jeju Organic Farm</p>
+        </div>
+
+        <div class="text-section">
+
+            <div class="calore_line">
+                <span id="calorie-count" class="calorie_highlight">230</span>kcal
+            </div>
+
+            <div class="nutrionFacts_line">
+                <!--
+                <button class = "button nutrionFacts">carbohydrate</button>
+                <button class = "button nutrionFacts">protein</button>
+                <button class = "button nutrionFacts">fats</button>
+                <button class = "button nutrionFacts">sugar</button>
+                -->
+                <p><span class="highlight">30</span><span class="highlight">g</span><br>carbohydrate</p>
+                <p><span class="highlight">5g</span><br>protein</p>
+                <p><span class="highlight">10g</span><br>fats</p>
+                <p><span class="highlight">28g</span><br>sugar</p>
+            </div>
+
+            <div class="personalOption_line"></div>
+
+            <div class="personalOption_line">Personal Option</div>
+
+            <div class="CoffeeTitle_line OptionTitle">Coffee
+
+                <div class="addEspressoShot_line inline">
+                    <p>Espresso Shot</p>
+                    <button class="button Add">Add</button>
+                    <p class="adding"> + 0</p>
+                </div>
+                <div class="CoffeeCustom_line inline">
+                    <p>Espresso Option</p>
+                    <button class="button Blonde">Blonde</button>
+                    <button class="button Decaf">Decaf</button>
+                    <button class="button halfDecaf">1/2 Decaf</button>
+                </div>
+                <div class="Roast_line inline">
+                    <p>Frappuccino Roast</p>
+                    <button class="button protein">Add</button>
+                </div>
+
+            </div>
+
+            <div class="SyrupTitle_line OptionTitle">Syrup
+
+                <div class="FrapSyrup_line inline">
+                    <p>Frappuccino Syrup</p>
+                    <button class="button protein">Default</button>
+                    <button class="button protein">Light</button>
+                </div>
+                <div class="ClassicSyrup_line inline">
+                    <p>Classic Syrup</p>
+                    <button class="button protein">Add</button>
+                </div>
+                <div class="Syrup_line inline">
+                    <p>Add Syrup</p>
+                    <button class="button protein">Vanilla</button>
+                    <button class="button protein">HazelNut</button>
+                    <button class="button protein">Caramel</button>
+                </div>
+
+            </div>
+
+            <div class="MilkTitle_line OptionTitle">Milk
+
+                <div>
+                    <button class="button protein">Whole</button>
+                    <button class="button protein">Low-fat</button>
+                    <button class="button protein">Fat-free</button>
+                    <button class="button protein">Soy Milk</button>
+                    <button class="button protein">Oat Milk</button>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+
+    </div>
+</body>
+<script src="third_page.js"></script>
+<script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.js"></script>
+
+</html>
